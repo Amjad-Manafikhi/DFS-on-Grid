@@ -108,7 +108,6 @@ export default function DelayedDFS() {
   }
   
   const space = vis.flat().reduce((sum, value) => sum + (value === 1 ? 1 : 0), 0);
-  console.log(count);
   return (
     <div className="container">
       <h1>DFS with Delay (One Step at a Time)</h1>
