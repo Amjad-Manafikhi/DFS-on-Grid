@@ -89,7 +89,7 @@ export default function DelayedDFS() {
         setRunning(false); // Stop DFS when the stack is empty
       }
       setCount(count=> count+1)
-    },0); // 100ms delay
+    },10); // 100ms delay
 
     return () => clearTimeout(timer); // Cleanup the timeout
   }, [stack, running, vis]);
